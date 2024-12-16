@@ -51,4 +51,16 @@ let userID =+"998"
 
 console.log(userID + 2)
 
+// ----------------------------------------------------------------
+// convert number to string
+let age = 25
 
+console.log(typeof age)
+
+console.log(age)
+
+let ageString=String(age)
+
+console.log(typeof ageString)
+
+console.log(ageString)

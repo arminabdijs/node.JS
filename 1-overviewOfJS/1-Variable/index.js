@@ -22,6 +22,8 @@ console.log(typeof age);
 
 console.log(typeof isEmployed);
 
+console.log(typeof (isEmployed));
+
 //----------------------------------------------------------------
 let age1 = 25;
 
