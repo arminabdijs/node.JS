@@ -3,7 +3,7 @@ let text = "I love love JavaScript"
 
 console.log(userName.length)
 
-console.log(userName[0])
+console.log(userName[7])
 
 console.log(text.toUpperCase())
 
@@ -12,6 +12,8 @@ console.log(text.toLowerCase())
 console.log(userName.trim())
 
 console.log(text.charAt(0))
+
+console.log(text.charCodeAt(0))
 
 console.log(text.charAt(text.length - 1))
 

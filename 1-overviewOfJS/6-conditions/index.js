@@ -14,8 +14,7 @@ if (num1 - num2 === 8) {
     console.log("oops")
 }*/
 
-/*
-let isLogin = true
+/*let isLogin = true
 
 /!*if (isLogin){
     console.log("Welcome")
@@ -26,9 +25,9 @@ if (isLogin === true) {
 }*/
 
 // ternary condition
-/*let getUserAge = +prompt("please enter your age :");
+let getUserAge = +prompt("please enter your age :");
 let getUserScore = +prompt("please enter your score :");
 
 let loggedOutput = getUserAge >= 18 && getUserScore <= 20 ? "yes" : "no";
 
-console.log(loggedOutput)*/
+console.log(loggedOutput)

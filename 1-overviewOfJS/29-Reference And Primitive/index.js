@@ -2,7 +2,7 @@
 let num1 = 10
 let num2 = num1
 
-num2 = 12
+num2 = 12 //reAssistant
 
 console.log(num1)
 
