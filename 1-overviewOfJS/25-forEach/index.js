@@ -11,7 +11,7 @@ let loopResult = products.forEach((product) => {
     console.log(product)
 })
 
-console.log(loopResult)
+console.log(loopResult)//undefined
 
 // ----------------------------------------------------------------
 let numbers = [1, 2, 3, 4, 5, 6]

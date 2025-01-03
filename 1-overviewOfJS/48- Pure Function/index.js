@@ -34,7 +34,7 @@ console.log(power3(7))
 //pure
 const power4 = (number) => {
     let sumNumber = 5
-    return (number ** 2) + sumNumber
+    return  (number ** 2)+ sumNumber
 }
 
 console.log(power4(5))

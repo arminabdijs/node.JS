@@ -24,12 +24,12 @@ console.log(sum(12, 13, testFunc))
 
 //----------------------------------------------------------------
 const func = (param) => {
-    let num1 = 12
+    let num1 = param
     return (param2) => {
-        console.log("Inner function Body")
+        console.log("Inner function Body" + param2)
     }
 }
-console.log(func(8)())
+func(8)(9)
 
 //----------------------------------------------------------------
 const func1 = (param) => {

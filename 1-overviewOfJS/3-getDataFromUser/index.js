@@ -6,7 +6,7 @@ const result = Number(your_Age);
 console.log(result);
 
 const yourAge = prompt("enter your Age : ");
-const Result = +your_Age;
+const Result = +yourAge;
 console.log(Result);
 
 const your_Age2 = Number(prompt("enter your Age : "));
