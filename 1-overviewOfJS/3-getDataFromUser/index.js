@@ -1,4 +1,4 @@
-let getUserAge = prompt("please enter your user : ")
+ let getUserAge = prompt("please enter your user : ")
 console.log(getUserAge)
 
 const your_Age = prompt("enter your Age : ");

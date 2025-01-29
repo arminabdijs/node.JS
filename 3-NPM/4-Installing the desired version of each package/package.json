@@ -19,9 +19,12 @@
   },
   "dependencies": {
     "express": "^4.21.2",
-    "jsonwebtoken": "^8.5.1",
     "nodemon": "^3.1.9"
   },
-  "devDependencies": {},
-  "keywords": []
+  "Description of how to change the version as desired": {
+    "message": "By putting the name of the package in the dependencies and using the ^ symbol, you enter the desired patch and using npm, we enter i in the terminal, this way the package is installed, we can even install the latest version with this method.",
+    "message2": "Another way to install a desired version is to use the following comment",
+    "command": "npm install express@^4.21.1"
+
+  }
 }

@@ -6,6 +6,7 @@
 //Module and modular programming
 //A module is a reusable piece of code that can be imported and used in other parts of your program.
 
+//In this example, utils.js is a module that contains a variable userName.
 import {userName} from "./utils.js"
-
 console.log(userName)
+

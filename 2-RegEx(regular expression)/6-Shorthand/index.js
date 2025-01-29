@@ -10,15 +10,15 @@
 
 
 // \w can be used for shorthand letters
-// \w ===[a-zA-Z1-9]
+// \w ===[a-zA-Z0-9]
 //         /\w{4}/g
 
-// \W !==[a-zA-Z1-9]
+// \W !==[a-zA-Z0-9]
 //         /\W{4}/g
 
 
 // \s can be used for shorthand whitespace
-//         /\s{4}/g
+//         /\s{4}/g 
 
 
 // \S !==whitespace
