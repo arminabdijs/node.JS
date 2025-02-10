@@ -6,5 +6,5 @@
 
 
 //If we forgot what we set, we can get it by receiving
-//npm get init-author-name
-//npm config get init-author-name
+// npm get init-author-name
+// npm config get init-author-name

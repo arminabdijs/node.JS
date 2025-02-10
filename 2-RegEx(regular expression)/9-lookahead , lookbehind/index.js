@@ -1,9 +1,9 @@
+// lookahead
 //positive lookahead
 //         /Text(?=\sis)/g
 
 
 //         /[0-9]+(?=km)/g
-
 
 
 //negative lookahead
@@ -12,6 +12,8 @@
 
 // lookbehind
 //positive lookbehind
-//         /(?<=and )Text/g
+//         /(?<=and\s)Text/g
+
+
 //negative lookbehind
-//         /(?<!and )Text/g
+//         /(?<!and\s)Text/g

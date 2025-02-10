@@ -27,6 +27,6 @@
   "messages": {
     "message": "To install a development package, we use the following comment",
     "command": "npm install <package_name> --save-dev ",
-    "command2": "npm i express -D === npm i express--save-dev"
+    "command2": "npm i express -D === npm i express --save-dev"
   }
 }
