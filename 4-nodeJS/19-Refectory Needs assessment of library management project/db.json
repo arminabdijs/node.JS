@@ -9,7 +9,7 @@
       "address": "123 Main St",
       "phone": "989185467382",
       "crime": 900000,
-      "role": "USER"
+      "role": "ADMIN"
     },
     {
       "id": "0482770c-f934-417f-b85c-310633677684",
@@ -52,6 +52,7 @@
       "email": "david121@gmail.com",
       "address": "987 Pine St",
       "phone": "989987654321",
+      "crime": 20000,
       "role": "ADMIN"
     },
     {
@@ -63,6 +64,17 @@
       "address": "456 Elm St",
       "phone": "989214568392",
       "crime": 0,
+      "role": "USER"
+    },
+    {
+      "id": "df265e50-b294-4ad9-8330-143d0ab6e829",
+      "name": "armin abdi",
+      "username": "arminabdiJS",
+      "email": "arminabdiJS@gmail.com",
+      "address": "ksdjbgjklsdhglksd",
+      "phone": "98921238952",
+      "password": "2394937cjodhf",
+      "crime": 20000,
       "role": "USER"
     }
   ],
@@ -93,15 +105,6 @@
       "genre": "Fiction",
       "price": "160000$",
       "free": 1
-    },
-    {
-      "id": "844465ca-1762-4179-ba39-7ba5ac6d7b96",
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "publication_year": 1960,
-      "genre": "Fiction",
-      "price": "140000$",
-      "free": 0
     },
     {
       "id": "b1d461a4-3262-41f5-928e-ebc1023264b3",
@@ -137,13 +140,31 @@
       "genre": "Fantasy",
       "price": "280000$",
       "free": 0
+    },
+    {
+      "id": "d0fd8711-9297-40be-a4d8-2dac1f8cc672",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "publication_year": 1954,
+      "genre": "Fantasy",
+      "price": "210000$",
+      "free": 0
+    },
+    {
+      "id": "cecfb5e7-65b7-49d7-92f9-c4a5da42283e",
+      "title": "The Lord of tksdsdklgjsdhe Rings",
+      "author": "J.R.R. Tolkjsdnkjghdfkien",
+      "publication_year": 19395393554,
+      "genre": "Fankldjgtasy",
+      "price": "56440$",
+      "free": 0
     }
   ],
   "rents": [
     {
-      "id": "237189a0-0ea7-4101-88e1-c391cbd80ed2",
+      "id": "6962fea4-5728-49c1-98ec-36ad7f20d393",
       "userID": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
-      "bookID": "9e5603d2-49d8-4694-8415-cab388d2eb8f",
+      "bookID": "d0fd8711-9297-40be-a4d8-2dac1f8cc672",
       "startDate": "2024-12-16",
       "endDate": "2025-01-25"
     }
