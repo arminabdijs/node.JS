@@ -1,22 +1,35 @@
-const {MongoClient}=require("mongodb")
+const { MongoClient } = require("mongodb");
 
-const url="mongodb://localhost:27017/"
+const url = "mongodb://localhost:27017/";
 
-const dbConnection=new MongoClient(url)
+const dbConnection = new MongoClient(url)
 
-const dbName="library"
+const dbName = "library";
 
-const main =async () =>{
-    await dbConnection.connect()
+const main = async () => {
+  try {
+    await dbConnection.connect().
+    console.log("Connected to MongoDB at " + url);
 
-    console.log("Connected to MongoDB at " + url)
-
-    const db = dbConnection.db(dbName)
-
-    return "Done connecting"
-
-
-}
+    const db = dbConnection.db(dbName);
+    console.log("Database selected: " + dbName);
+  } catch (err) {
+    console.error("Error connecting to MongoDB:", err);
+  } 
+};
 
 main()
+
+
+
+// ------------------------------------------------------------------------
+
+const mongoose = require("mongoose");
+
+mongoose
+  .connect("mongodb://localhost:27017/library")
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => console.log("Error connecting"));
 
