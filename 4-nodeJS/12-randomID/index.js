@@ -1,14 +1,14 @@
 let db = [
     {
-        "id": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
-        "name": "John Doe",
-        "username": "John_Doe",
-        "password": "12345678",
-        "email": "john121@gmail.com",
-        "address": "123 Main St",
-        "phone": "989185467382",
-        "crime": 900000,
-        "role": "USER"
+        id: "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+        name: "John Doe",
+        username: "John_Doe",
+        password: "12345678",
+        email: "john121@gmail.com",
+        address: "123 Main St",
+        phone: "989185467382",
+        crime: 900000,
+        role: "USER"
     },
 ]
 

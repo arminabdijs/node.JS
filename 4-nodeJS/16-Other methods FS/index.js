@@ -1,6 +1,6 @@
-// const fs = require('fs')
+const fs = require('fs')
 
-//To rename a file using the file system method, we use the following method:
+// To rename a file using the file system method, we use the following method:
 // fs.rename('db.json', 'dataBase.json', (err) => {
 //     if (err) throw err
 //     console.log('File renamed successfully.')
@@ -43,7 +43,7 @@
 // ----------------------------------------------------------------
 
 
-//To create a new directory using the file system method, we use the following method:
+// To create a new directory using the file system method, we use the following method:
 // fs.mkdir("armin",(err)=>{
 //     if (err) throw err
 //     console.log("Directory created successfully!")
@@ -77,9 +77,3 @@
 //     if (err) throw err
 //     console.log("Files in armin2:", files)
 // })
-
-
-
-
-
-

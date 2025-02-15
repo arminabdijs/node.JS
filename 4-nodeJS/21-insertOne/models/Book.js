@@ -19,7 +19,7 @@ const remove = (bookID) => {
         if (!bookExists) {
             reject('Book not found')
         } else {
-            fs.writeFile("db.json", JSON.stringify({...db, books: newBook}), (err) => {
+            fs.writeFile(`${process.cwd()}/db.json`, JSON.stringify({...db, books: newBook}), (err) => {
                 if (err) reject(err);
                 resolve('Book deleted successfully')
             })
