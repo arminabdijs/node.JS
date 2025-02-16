@@ -14,41 +14,27 @@ const main = async () => {
     const db = dbConnection.db(dbName);
 
     const usersCollection = db.collection("users");
-
-    const result = await usersCollection.updateOne(
+    // *! createdAt: This field is automatically set to the date and time when the document is first created.
+    // *! updatedAt: This field is automatically set to the date and time whenever the document is updated.
+    const result = await usersCollection.updateMany(
       {
-        name: "Alice Johnson",
+        createdAt: { $exists: true },
       },
       {
-        $set: {
-          name: "Alice Johnson",
-          username: "Alice Johnson",
-          password: "12345678",
-          programming: "JavaScript",
-        },
-        // To remove a field from a document during an update, the $unset operator is used
-        $unset: {
-          email: "",
-          address: "",
-          phone: "",
-          role: "",
-        },
-        // To increment the value of a field by a specified amount
-        /* $inc: {
-      crime: -150,
-    }, */
-        // To multiply the value of a field by a specified amount
-        /* $min:{
-      crime: 0,
-    } */
-        // To multiply the value of a field by a specified amount
-        $max: {
-          crime: 999999999,
-        },
+        /* $set: {
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }, */
+
+        /* $currentDate: {
+          createdAt: true,
+          updatedAt: true,
+        }, */
       }
     );
 
     console.log(result);
+    
 
     console.log("Database selected: " + dbName);
   } catch (err) {

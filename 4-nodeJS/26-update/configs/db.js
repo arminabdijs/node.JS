@@ -17,7 +17,6 @@ const main = async () => {
 
     const result = await usersCollection.insertMany([
       {
-         
         name: "John Doe",
         username: "John_Doe",
         password: "12345678",
@@ -25,6 +24,7 @@ const main = async () => {
         phone: "989185467382",
         crime: 900000,
         role: "ADMIN",
+        tags: ["html", "json", "css", "javascript"],
       },
       {
         name: "Alice Johnson",
@@ -34,6 +34,7 @@ const main = async () => {
         phone: "989395678210",
         crime: 50000,
         role: "USER",
+        tags: ["html", "json", "css", "javascript"],
       },
       {
         name: "Bob Brown",
@@ -43,6 +44,7 @@ const main = async () => {
         phone: "989654789012",
         crime: 70000,
         role: "USER",
+        tags: ["html", "json", "css", "javascript"],
       },
       {
         name: "Charlie Davis",
@@ -52,6 +54,7 @@ const main = async () => {
         phone: "989876543210",
         crime: 20000,
         role: "USER",
+        tags: ["html", "json", "css", "javascript"],
       },
       {
         name: "David Wilson",
@@ -61,6 +64,7 @@ const main = async () => {
         phone: "989987654321",
         crime: 20000,
         role: "ADMIN",
+        tags: ["html", "json", "css", "javascript"],
       },
       {
         name: "Jane Smith",
@@ -70,14 +74,14 @@ const main = async () => {
         phone: "989214568392",
         crime: 0,
         role: "USER",
-        address:{
+        address: {
           city: "Javanrud",
           state: "Kermanshah",
           country: "Iran",
-        }
+        },
+        tags: ["html", "json", "css", "javascript"],
       },
     ]);
-
 
     console.log(result);
 
@@ -126,7 +130,6 @@ const main = async () => {
     );
 
     console.log(result); */
-    
 
     console.log("Database selected: " + dbName);
   } catch (err) {
