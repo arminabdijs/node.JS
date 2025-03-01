@@ -35,9 +35,10 @@ const main = async () => {
 
     console.log(result); */
 
-    const result = await usersCollection.findOne({_id:new ObjectId('67b063860ff1278a2e318143')})
+    const result = await usersCollection.findOne({
+      _id: new ObjectId("67b063860ff1278a2e318143"),
+    });
     console.log(result.tags[4]);
-    
 
     console.log("Database selected: " + dbName);
   } catch (err) {

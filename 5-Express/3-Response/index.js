@@ -4,24 +4,31 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-const courses = [
-  { id: 1, name: "JS", price: 100 },
-  { id: 2, name: "Node", price: 200 },
-  { id: 3, name: "React", price: 300 },
-  { id: 4, name: "Express", price: 0 },
+const headings = [
+  {
+    id: 1,
+    name: "Web Development",
+  },
+  {
+    id: 2,
+    name: "Mobile Development",
+  },
+  {
+    id: 3,
+    name: "Data Science",
+  },
 ];
 
-/* app.get("/courses/:id", (req, res) => {
-  res.send(req.params.id);
-}); */
 app.get("/courses/:id", (req, res) => {
-  /*   const course = courses.find((course) => course.id === Number(req.params.id));*/
-  const course = courses.find(
-    (course) => course.id === parseInt(req.params.id)
-  );
-  if (!course)
-    res.status(404).send("The course with the given ID was not found");
-  res.send(course);
+  const heading = headings.find((c) => c.id === parseInt(req.params.id));
+  if (!heading) return res.send("The course with the given ID was not found.");
+/*   res.send(`<h1>${heading.name}</h1>`);
+ */
+
+//  res.json(heading);
+
+ res.end("the courses Response with end method"); 
+  
 });
 
 app.listen(port, () => {

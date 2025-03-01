@@ -18,11 +18,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongodb": "^6.13.0",
-    "mongoose": "^8.10.0",
+    "fastest-validator": "^1.19.0",
+    "mongodb": "^6.13.1",
+    "mongoose": "^8.10.1",
     "nodemon": "^3.1.9"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  }
 }

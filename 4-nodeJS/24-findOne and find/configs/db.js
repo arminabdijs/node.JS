@@ -15,7 +15,7 @@ const main = async () => {
 
     const usersCollection = db.collection("users");
 
-    //find all users =Armin Abdi
+    //find all crime: 0
     /* 
     const noCrimeUsers = await usersCollection.find({ crime: 0 }).toArray();
     

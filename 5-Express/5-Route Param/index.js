@@ -11,17 +11,10 @@ const courses = [
   { id: 4, name: "Express", price: 0 },
 ];
 
-/* app.get("/courses/:id", (req, res) => {
-  res.send(req.params.id);
-}); */
-app.get("/courses/:id", (req, res) => {
-  /*   const course = courses.find((course) => course.id === Number(req.params.id));*/
-  const course = courses.find(
-    (course) => course.id === parseInt(req.params.id)
-  );
-  if (!course)
-    res.send("The course with the given ID was not found");
-  res.send(course);
+app.get("/api/users/:userID/articles/:articleID", (req, res) => {
+  console.log(`userId: ${req.params.userID}`);
+  console.log(`articleId: ${req.params.articleID}`);
+  res.json({message:"Main User Article send to Client"});
 });
 
 app.listen(port, () => {

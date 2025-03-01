@@ -21,7 +21,7 @@ const main = async () => {
 
     // * find and delete one document
     /* const result = await usersCollection.findOneAndDelete({
-      crime: { $gt: 30 },
+      crime: { $gte: 30 },
     });
     console.log(result); */
 
@@ -30,16 +30,6 @@ const main = async () => {
     console.log(result.deletedCount); */
 
     
-
-    // *? operator for comparison
-    // *! $gt ==> greater than
-    // *! $gte ==> greater than equal to
-    // *! $lt ==> less than
-    // *! $lte ==> less than equal to
-    // *! $eq ==> equal to
-    // *! $ne ==> not equal to
-    // *! $in ==> in[1,2,3]
-    // *! $nin ==> not in[1,2,3]
 
     console.log("Database selected: " + dbName);
   } catch (err) {

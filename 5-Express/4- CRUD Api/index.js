@@ -11,18 +11,32 @@ const courses = [
   { id: 4, name: "Express", price: 0 },
 ];
 
-/* app.get("/courses/:id", (req, res) => {
-  res.send(req.params.id);
-}); */
 app.get("/courses/:id", (req, res) => {
-  /*   const course = courses.find((course) => course.id === Number(req.params.id));*/
   const course = courses.find(
     (course) => course.id === parseInt(req.params.id)
   );
-  if (!course)
+  if (!course) {
     res.send("The course with the given ID was not found");
-  res.send(course);
+  } else {
+    res.send(course);
+  }
 });
+
+app.post("/courses", (req, res) => {
+  res.status(201).send("new course created successfully");
+  
+})
+
+app.put("/courses/:id", (req, res) => {
+  res.statusCode=300;
+  res.send("course updated successfully");
+  
+})
+
+app.delete("/courses/:id", (req, res) => {
+  res.status(200).send("course deleted successfully");
+  
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
