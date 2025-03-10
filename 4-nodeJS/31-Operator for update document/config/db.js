@@ -17,34 +17,34 @@ const main = async () => {
 
     const result = await usersCollection.updateOne(
       {
-        name: "Alice Johnson",
+        name: "John Doe",
       },
       {
-        $set: {
-          name: "Alice Johnson",
-          username: "Alice Johnson",
-          password: "12345678",
-          programming: "JavaScript",
-        },
+        //   $set: {
+        //     name: "Alice Johnson",
+        //     username: "Alice Johnson",
+        //     password: "12345678",
+        //     programming: "JavaScript",
+        //   },
         // To remove a field from a document during an update, the $unset operator is used
-        $unset: {
-          email: "",
-          address: "",
-          phone: "",
-          role: "",
-        },
-        // To increment the value of a field by a specified amount
-        /* $inc: {
-      crime: -150,
-    }, */
-        // To multiply the value of a field by a specified amount
+        // $unset: {
+        //   email: "",
+        //   address: "",
+        //   phone: "",
+        //   role: "",
+        // },
+        // To increase or decrease the value of a field by a specified value
+        /*   $inc: {
+          crime: -150,
+        }, */
+        // This specifies the minimum value that can be entered.
         /* $min:{
       crime: 0,
     } */
-        // To multiply the value of a field by a specified amount
-        $max: {
-          crime: 999999999,
-        },
+        // This specifies the maximum value that can be entered.
+        // $max: {
+        //   crime: 999999999,
+        // },
       }
     );
 

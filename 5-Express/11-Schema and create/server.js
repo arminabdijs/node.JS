@@ -6,6 +6,7 @@ const usersModel = require("./models/users");
 const booksModel = require("./models/books");
 
 const app = express();
+
 app.use(express.json()); // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: false })); // to support URL-encoded bodies
 

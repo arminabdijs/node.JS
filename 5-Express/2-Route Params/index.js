@@ -11,9 +11,9 @@ const courses = [
   { id: 4, name: "Express", price: 0 },
 ];
 
-/* app.get("/courses/:id", (req, res) => {
+app.get("/courses1/:id", (req, res) => {
   res.send(req.params.id);
-}); */
+});
 app.get("/courses/:id", (req, res) => {
   /*   const course = courses.find((course) => course.id === Number(req.params.id));*/
   const course = courses.find(

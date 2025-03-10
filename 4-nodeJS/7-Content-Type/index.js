@@ -34,7 +34,7 @@ const Server = http.createServer((req, res) => {
         //     res.end()
         // }
 
-        // // Content-Type: text/xml
+         // Content-Type: text/xml
         // if (req.url === "/") {
         //     res.writeHead(200, {'Content-Type': 'text/xml'});
         //     res.write(`<root><message>Hello World!</message></root>`);

@@ -34,7 +34,7 @@ app.put("/courses/:id", (req, res) => {
 })
 
 app.delete("/courses/:id", (req, res) => {
-  res.status(200).send("course deleted successfully");
+  res.status(205).send("course deleted successfully");
   
 })
 

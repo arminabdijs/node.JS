@@ -20,7 +20,7 @@ console.log(`Users list:\n ${data}`)*/
 
 })*/
 
-
+//{flag: "a"}: The flag "a" tells Node.js to append to the file instead of overwriting it.
 /*fs.writeFile("text.txt", "\nahmad", {flag: "a"}, (err) => {
     if (err) throw err;
     console.log("The file has been saved!");

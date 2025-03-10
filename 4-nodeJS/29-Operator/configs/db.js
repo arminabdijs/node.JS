@@ -15,41 +15,50 @@ const main = async () => {
 
     const usersCollection = db.collection("users");
 
-    // * $ne
-    // * find document
+    // *! $ne ==> not equal to
     /* const result = await usersCollection
       .find({ role: { $ne: "ADMIN" } })
       .toArray();
 
     console.log(result); */
 
-    // *? eq
+    // *! $eq ==> equal to
     /* const result = await usersCollection
       .find({ role: { $eq: "ADMIN" } })
       .toArray();
 
     console.log(result); */
 
-    // *? gte and lte
+    // *! $gt ==> greater than
+    // *! $lt ==> less than
+    /* const result = await usersCollection
+      .find({ crime: { $gt: 2000, $lt: 30000 } })
+      .toArray();
+
+    console.log(result); */
+
+    // *! $gte ==> greater than equal to
+    // *! $lte ==> less than equal to
+
     /* const result = await usersCollection
       .find({ crime: { $gte: 2000, $lte: 30000 } })
       .toArray();
 
     console.log(result); */
 
-    // *? in
+    // *! $in ==> in[1,2,3]
     /* const result = await usersCollection
       .find({ role: { $in: ["super Admin", "USER+"] } })
       .toArray();
     console.log(result); */
 
-    // *? nin
+    // *! $nin ==> not in[1,2,3]
     /*   const result = await usersCollection
       .find({ role: { $nin: ["ADMIN", "USER"] } })
       .toArray();
     console.log(result); */
 
-    // *?or
+    // *! $or ==> or[{},{},{}]
     /* const result = await usersCollection
       .find({
         $or: [{ role: "ADMIN" }, { role: "USER" }],
@@ -57,7 +66,7 @@ const main = async () => {
       .toArray();
     console.log(result); */
 
-    // *?and
+    // *! $and ==> and[{},{},{}]
     /* const result = await usersCollection
       .find({
         $and: [{ role: "ADMIN" }, { crime: { $gte: 20000 } }],
@@ -65,7 +74,7 @@ const main = async () => {
       .toArray();
     console.log(result); */
 
-    // *?not
+    // *! $not ==> not{}
     /* const result = await usersCollection
       .find({
         role: {
@@ -75,7 +84,7 @@ const main = async () => {
       .toArray();
     console.log(result); */
 
-    // *?exists
+    // *! $exists ==> exists
     const result = await usersCollection
       .find({
         address: {
@@ -85,21 +94,6 @@ const main = async () => {
       .toArray();
 
     console.log(result);
-
-
-    // *? operator for comparison
-    // *! $gt ==> greater than
-    // *! $gte ==> greater than equal to
-    // *! $lt ==> less than
-    // *! $lte ==> less than equal to
-    // *! $eq ==> equal to
-    // *! $ne ==> not equal to
-    // *! $in ==> in[1,2,3]
-    // *! $nin ==> not in[1,2,3]
-    // *! $or ==> or[{},{},{}]
-    // *! $and ==> and[{},{},{}]
-    // *! $not ==> not{}
-    // *! $exists ==> exists
 
     console.log("Database selected: " + dbName);
   } catch (err) {
